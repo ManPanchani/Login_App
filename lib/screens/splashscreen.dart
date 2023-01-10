@@ -39,7 +39,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
 
   divertSceen() async {
     SharedPreferences sf = await SharedPreferences.getInstance();
-    Timer.periodic(Duration(seconds: 3), (timer) {
+    Timer.periodic(const Duration(seconds: 3), (timer) {
       sf.setBool('first', isFirstIntro);
       Navigator.pushReplacementNamed(context, '/');
     });

@@ -19,10 +19,11 @@ class _Home_PageState extends State<Home_Page> {
         alignment: Alignment.center,
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage(
-                "images/login app.jpg",
-              ),
-              fit: BoxFit.cover),
+            image: AssetImage(
+              "images/login app.jpg",
+            ),
+            fit: BoxFit.cover,
+          ),
         ),
         child: const Text(
           "WelCome successful Login",
